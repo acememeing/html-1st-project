@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>VISHWAS KI CHAHTEIN</title>
+<style>
+  /* Color palette */
+  :root {
+    --purple: #6a0dad;
+    --black: #000000;
+    --vibrant-pink: #ff33cc;
+    --grey: #888888;
+    --bg-gradient: linear-gradient(135deg, var(--purple), var(--vibrant-pink));
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--black);
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  h1 {
+    color: var(--vibrant-pink);
+    text-shadow: 0 0 8px var(--vibrant-pink);
+    margin-bottom: 1rem;
+  }
+
+  p.description {
+    color: var(--grey);
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.3rem; /* smaller gap between artist cards */
+  width: 100%;
+  max-width: 1000px;
+}
+
+
+  .artist-card {
+    background: var(--black);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    color: var(--black);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid white; /* Polaroid white border */
+    padding-bottom: 20px; /* Extra bottom padding for Polaroid style */
+    max-width: 140px;
+    margin: auto;
+    background-clip: padding-box; /* keep border clean */
+  }
+
+  .artist-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--vibrant-pink);
+  }
+
+  .artist-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    background: white;
+  }
+
+  .artist-name {
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 1rem 0.2rem 1rem;
+    text-align: center;
+    color: var(--grey);
+  }
+
+  .discover-button {
+    background: var(--vibrant-pink);
+    border: none;
+    color: var(--black);
+    font-weight: bold;
+    padding: 0.4rem 1rem;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 0.9rem;
+  }
+
+  .discover-button:hover {
+    background: var(--purple);
+    color: var(--vibrant-pink);
+  }
+</style>
+</head>
+<body>
+  <h1>DISCOVER ARTISTS I LOVE</h1>
+  <H2>BY VISHWAS KOHATI</H2>
+  <p class="description">Explore these amazing artists and find your new favorites. Click on the buttons to learn more about each artist and how to discover their work.</p>
+  
+  <div class="artist-grid" id="artistGrid">
+    <!-- Artist cards -->
+    <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/seedhemaut" alt="Artist 1">
+      <div class="artist-name">SEEDHE MAUT</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+
+    <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/driveincinema" alt="Artist 2">
+      <div class="artist-name">DHANJI</div>
+      <button class="discover-button" onclick="alert('Discover Artist 2’s music and work on their official website!')">Discover</button>
+    </div>
+    <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/krdollar" alt="Artist 1">
+      <div class="artist-name">KR$NA</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+    <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/2b3uy967" alt="Artist 1">
+      <div class="artist-name">RAFTAAR</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+    <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/29ub33sf" alt="Artist 1">
+      <div class="artist-name">FARIS SHAFI</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+     <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/29zjjpre" alt="Artist 1">
+      <div class="artist-name">CHAAR DIWARI</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+     <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/278usu8k" alt="Artist 1">
+      <div class="artist-name">NANKU</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+     <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/27uc7fxs" alt="Artist 1">
+      <div class="artist-name">FARHAN KHAN</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+     <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/25pabvyg" alt="Artist 1">
+      <div class="artist-name">A.R.RAHMAN</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+     <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/228lbmel" alt="Artist 1">
+      <div class="artist-name">RAWAL</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+     <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/2bhmveqa" alt="Artist 1">
+      <div class="artist-name">IKKA</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+     <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/2xuhe5lc" alt="Artist 1">
+      <div class="artist-name">AMRINDER GILL</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+      <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/2aghk95m" alt="Artist 1">
+      <div class="artist-name">TALWINDER</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+      <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/2xpa7nr7" alt="Artist 1">
+      <div class="artist-name">YASHRAJ</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+      <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/26gvgrcn" alt="Artist 1">
+      <div class="artist-name">KARAN AUJLA</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+      <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/27w227tk" alt="Artist 1">
+      <div class="artist-name">SIKANDAR KHALON</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+      <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/26x3bpyl" alt="Artist 1">
+      <div class="artist-name">KK</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+      <div class="artist-card" tabindex="0">
+      <img class="artist-photo" src="https://tinyurl.com/25q4feap" alt="Artist 1">
+      <div class="artist-name">MOHIT CHAUHAN</div>
+      <button class="discover-button" onclick="alert('Discover Artist 1’s music and work on their official website!')">Discover</button>
+    </div>
+  </div>
+
+</body>
+</html>
